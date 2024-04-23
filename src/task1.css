@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Vazirmatn";
+}
+
+body {
+  color: var(--color-heading);
+  font-size: 1.4rem;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-Thin.ttf") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-ExtraLight.ttf") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-Light.ttf") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-Medium.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-SemiBold.ttf") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-ExtraBold.ttf") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../assest/fonts/Vazirmatn-Black.ttf") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #219f95;
+  --color-secondry: #afcedd;
+  --color-secondry-dark: #234894;
+  --color-heading: #1e1e1e;
+  --color-info: #696969;
+  --color-white: #fff;
+}
+
+.container {
+  margin: 5.6rem 3.6rem;
+}
+.demand__header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  text-wrap: nowrap;
+  font-weight: 900;
+}
+.demand__boxses {
+  display: grid;
+  grid-template-columns: minmax(250px, 400px);
+  gap: 3rem;
+  justify-content: center;
+}
+.number {
+  font-size: 1.4rem;
+  background-color: var(--color-secondry);
+  color: var(--color-secondry-dark);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-left: 1rem;
+  font-weight: 900;
+}
+.demand__heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.demand__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.4rem;
+  text-wrap: nowrap;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+.demand__info {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.paragragh {
+  color: var(--color-secondry-dark);
+  font-size: 1.4;
+  font-weight: 600;
+}
+.demand__info button {
+  font-family: "Vazirmatn";
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  border: 0;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 6px;
+  margin-left: 0.5rem;
+  font-size: 1.4;
+  text-wrap: nowrap;
+  font-weight: 500;
+}
+.date,
+.id {
+  color: var(--color-info);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.sign {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+@media screen and (min-width: 768px) {
+  .demand__header h1 {
+    font-size: 2rem;
+  }
+  .demand__boxses {
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    justify-content: space-around;
+  }
+  .number {
+    font-weight: 900;
+  }
+  .number,
+  .info img {
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    width: 35px;
+    height: 35px;
+  }
+  .info span,
+  .paragragh {
+    font-size: 1.6rem;
+  }
+  .demand__info button {
+    padding: 2rem 1.4rem;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+  }
+  .date,
+  .id {
+    font-size: 1.4rem;
+  }
+  .sign {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .demand__header h1 {
+    font-size: 2.5rem;
+  }
+  .demand__boxses {
+    grid-template-columns: repeat(3, minmax(300px, 400px));
+    gap: 4rem;
+  }
+  .number,
+  .info img {
+    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+  }
+  .info span,
+  .paragragh {
+    font-size: 1.8rem;
+  }
+  .date,
+  .id {
+    font-size: 1.6rem;
+  }
+  .sign {
+    font-size: 2rem;
+  }
+}
